@@ -1,0 +1,9 @@
+select name from city where population>120000 and Countrycode="USA";
+select * from CITY where COUNTRYCODE="JPN";
+select DISTINCT city from Station where MOD(id, 2) =0;
+select count(city) - COUNT(DISTINCT city) AS difference from Station;
+
+select name from employee where salary > 2000 and months< 10, empoloyee_id asc;
+select sum(population) from city where district="California";
+select AVG(population) from City where district != "California";
+select MAX(population) - MIN(population) as Difference from City;
